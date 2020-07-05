@@ -1,0 +1,161 @@
+/* Body */ 
+
+.wrapper {
+    margin: 5%;
+    padding: 1%;
+}
+
+.card {
+    background-color: #E08E79; 
+    box-shadow: 10px 10px 30px 14px rgba(197,224,220,0.76);
+    border-radius: 1em;
+    padding: 10px;
+}
+
+body{ 
+    background-color: #ECE5CE;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    background-color: #f5d797;
+    padding: 0.1em;
+}
+
+.title {
+    font-family: 'Galada', cursive; 
+    letter-spacing: 2px;
+    color: #774F38;
+    margin: 5px 20px;
+}
+
+/* Aside */ 
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.text {
+    font-family: 'Rubik', sans-serif;
+    color: #5d4536;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 1em;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background-color: #F1D4AF;
+    font-family: 'Galada', cursive; 
+    color: #774F38;
+    outline: 0;
+}
+
+.btn:hover {
+    background-color: #C5E0DC;
+}
+
+/* Main*/
+
+.subtitle {
+    font-family: 'Galada', cursive; 
+    color: #774F38;
+}
+
+.subtitle h2 {
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5%;
+    justify-content: space-around;
+}
+
+.section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section div .picture {
+    height: 150px;
+    border-radius: 1em;
+    border: 1px solid #eeffee; 
+}
+
+/* Footer */
+
+.footer {
+    background-color: #f5d797;
+    padding: 0.1em;
+    text-align: center;
+
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 768px) {
+    .section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
+
+    .section div .fruit-name {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        color: #5d4536;
+        font-size: 20px;
+    }
+
+    .section div .picture {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .section {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .section {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+
+    .section {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-gap: 10px;
+    }
+}
+
+
+
+/*Hide Class for fruits.*/
+
+.hide {
+    display: none;
+}
